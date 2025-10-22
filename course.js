@@ -4,10 +4,13 @@ const courserouter=router();
 
 
 
-courserouter.get("/course/preview", function(req, res){
+courserouter.get("/preview", function(req, res){
     
 })
 
-courserouter.post("/course/purchase", function(req, res){
+courserouter.post("/purchase", function(req, res){
     
 })
+module.exports={
+    courserouter: courserouter
+}
