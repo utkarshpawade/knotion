@@ -1,20 +1,15 @@
-const express=require('express');
+const express=require("express");
 const app=express();
-app.post("/user/signup", function(req, res){
+const {userrouter}=require("./routes/user");
+const {courserouter}=require("./routes/course");
+const app=express();
 
-})
-app.post("/user/signin", function(req, res){
-    
-})
-app.get("/courses", function(req, res){
-    
-})
-app.get("/user/purchases", function(req, res){
-    
-})
-app.post("/course/purchase", function(req, res){
-    
-})
+app.use("/user", userrouter);
+app.use("/course", courserouter);
+app.use("/admin", adminrouter);
+
+
+
 
 
 
