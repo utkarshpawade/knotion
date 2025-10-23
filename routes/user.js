@@ -1,5 +1,5 @@
-const {router}=require("express");
-const userrouter=router();
+const {Router}=require("express");
+const userrouter=Router();
 
 
 

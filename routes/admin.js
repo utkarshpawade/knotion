@@ -1,6 +1,6 @@
-const {router}=require("express");
-const adminrouter=router();
-
+const {Router}=require("express");
+const adminrouter=Router();
+const {adminmodel}=require("../db");
 adminrouter.post("/signup", function(req, res){
 
 })

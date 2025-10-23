@@ -1,6 +1,6 @@
-const {router}=require("express");
-const courserouter=router();
-
+const {Router}=require("express");
+const courserouter=Router();
+const {coursemodel}=require("../db");
 
 
 
