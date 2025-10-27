@@ -1,8 +1,12 @@
 const {Router}=require("express");
 const userrouter=Router();
 
+function usermiddleware(req, res, next){
+    const email=req.body.email;
+    const password
+}
 
-
+    
 
 
 

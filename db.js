@@ -1,9 +1,8 @@
 const mongoose=require("mongoose");
 console.log("extablished");
-mongoose.connect("");
+mongoose.connect("mongodb+srv://admin:kingnapoleon@cluster0.zhlzacg.mongodb.net/");
 const schema=mongoose.Schema;
 const objectid=mongoose.Types.ObjectId;
-
 
 const userschema=new schema({
 email:{type: String, unique: true},
