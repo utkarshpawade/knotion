@@ -1,6 +1,13 @@
 const mongoose=require("mongoose");
 console.log("extablished");
-mongoose.connect("mongodb+srv://admin:kingnapoleon@cluster0.zhlzacg.mongodb.net/");
+require("dotenv").config();
+const mongoURI = process.env.MONGODB_URI;
+mongoose.connect(mongoURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("connected"))
+.catch((err) => console.error("connection error:", err));
 const schema=mongoose.Schema;
 const objectid=mongoose.Types.ObjectId;
 
